@@ -2,12 +2,14 @@
     display: flex;
     justify-content: center;
     margin: 8rem 0;
+    
+
 }
 .formUser__form{
     padding:0 10rem ;
     max-width: 80%;
     width: 100rem;
-    height: 40rem;
+    height: auto;
     background-color: #F7F7F7;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
