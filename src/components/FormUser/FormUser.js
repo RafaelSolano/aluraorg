@@ -1,6 +1,7 @@
 import "./FormUser.css"
 import FieldForm from "../FieldInput";
 import ListOptions from "../ListOptions";
+import Button from "../Button";
 const FormUser = () =>{
     return <section className="formUser">
         <form className="formUser__form">
@@ -9,6 +10,9 @@ const FormUser = () =>{
             <FieldForm title ='Puesto: ' placeholder="Ingresar Puesto"/>
             <FieldForm title ='Foto:'placeholder="Ingresar enlace de Foto" />
             <ListOptions />
+            <Button>
+                Crear
+            </Button>
             
         </form>
     </section>

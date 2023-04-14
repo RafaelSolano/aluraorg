@@ -6,7 +6,10 @@
 
 }
 .formUser__form{
+    display: flex;
+    flex-direction: column;
     padding:0 10rem ;
+    padding-bottom: 3.2rem;
     max-width: 80%;
     width: 100rem;
     height: auto;
