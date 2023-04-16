@@ -37,7 +37,7 @@ function App() {
     {
       title: "UX y Diseño",
       colorPrimary: '#DB6EBF'  ,
-      colorSecundary:'#FDE7E8'     
+      colorSecundary:'#FAE9F5'     
     },
     {
       title: "Móvil",

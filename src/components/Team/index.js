@@ -1,4 +1,5 @@
 import "./styles.css"
+import Worker from "../Worker"
 
 const Team =(props) =>{
     //destructuracion
@@ -12,7 +13,13 @@ const Team =(props) =>{
     }
     return <section className="team" style={obj}>
         <h3 className="team__title" style={styleTitle} >{title}</h3>
-        <div className="team__persons"></div>
+        <div className="team__persons">
+            <Worker/>
+            <Worker/>
+            <Worker/>
+            <Worker/>                                                                                                                                                               
+        </div>
+        
     </section>
 
 }
