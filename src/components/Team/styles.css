@@ -1,0 +1,19 @@
+.team{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3.4rem;
+    width: 100%;
+    
+}
+.team__title {
+
+    margin-bottom: 5.2rem;
+    padding-bottom: 1rem;
+    font-family: "Prata";
+    font-size: 3.2rem;
+    font-weight: 400;
+    color: #212121;
+    border-bottom: 4px solid #57C278;
+}
