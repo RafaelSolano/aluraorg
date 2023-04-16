@@ -1,12 +1,14 @@
 import "./styles.css"
-const Worker =() =>{
+const Worker =(props) =>{
+    const {personName, personPuesto, personFoto} = props.data
+    const {colorPrimary} =props
     return <div className='worker'>
-        <div className="worker__header">
-            <img className="worker__img" src="https://github.com/harlandlohora.png"alt=""/>
+        <div className="worker__header" style={{ backgroundColor:colorPrimary}}>
+            <img className="worker__img" src= {personFoto}alt={personName}/>
         </div>
         <div className="worker__info">
-            <h3 className="worker__name">Harland</h3>
-            <h4 className="worker__grade">Full stack</h4>
+            <h3 className="worker__name">{personName}</h3>
+            <h4 className="worker__grade">{personPuesto}</h4>
         </div>
     </div>
 

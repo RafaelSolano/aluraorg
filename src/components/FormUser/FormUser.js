@@ -4,10 +4,12 @@ import FieldForm from "../FieldInput";
 import ListOptions from "../ListOptions";
 import Button from "../Button";
 const FormUser = (props) =>{
-    const [personName , actualizarName] = useState("")
-    const [personPuesto , actualizarPuesto] = useState("")
-    const [personFoto , actualizarFoto] = useState("")
-    const [equipo, actualizarEquipo] = useState("")
+    const [personName , actualizarName] = useState("");
+    const [personPuesto , actualizarPuesto] = useState("");
+    const [personFoto , actualizarFoto] = useState("");
+    const [equipo, actualizarEquipo] = useState("");
+
+    const {addWorker}=props;
 
     const controlSubmit =(e) =>{
         e.preventDefault()
@@ -19,7 +21,7 @@ const FormUser = (props) =>{
             equipo
             
         }
-        console.log(datosEnviar);
+        addWorker(datosEnviar);
     }
 
     return <section className="formUser">
