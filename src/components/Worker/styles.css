@@ -13,6 +13,7 @@
     height:  9.1rem;
     background-color:#ccc;
     border-radius: 10px 10px 0px 0px ;
+    
 
 }
 .worker__img{
@@ -42,5 +43,13 @@
     font-size: 1.6rem;
     font-weight: 400;
     text-align: center;
+
+}
+.worker__eliminarbtn{
+    position: relative;
+    font-size: 2rem;
+    top: -10px;
+    left: 130px;
+
 
 }

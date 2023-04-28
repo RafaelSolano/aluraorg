@@ -19,7 +19,7 @@ const Footer = ()=>{
             <img className="footer__img" src="img/Logo.svg" alt="logo"></img>
         </div>
         <div className="footer__text">
-            <p>Desarrollado por Rafael Solano</p>
+            <p>Desarrollado por  <a href="#">Rafael Solano</a> </p>
         </div>
         
         

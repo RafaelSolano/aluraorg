@@ -169,16 +169,6 @@ function App() {
   ]);
   
 
-/*
-https://github.com/genesysaluralatam.png
-
-https://github.com/JeanmarieAluraLatam.png
-
-https://github.com/christianpva.png
-
-https://github.com/JoseDarioGonzalezCha.png
-
-*/
   const switchShow = () =>{
     updateShow(!showForm)
   }
@@ -188,6 +178,10 @@ https://github.com/JoseDarioGonzalezCha.png
     console.log("nuevo  Worker " , worker);
     //spread operator
     updateWorker([...workers, worker])
+  }
+  //eliminar colaborador
+  const deleteWorker =() =>{
+    console.log("eliminar Colaborador");
   }
 
   //lista de equipos
@@ -246,6 +240,8 @@ https://github.com/JoseDarioGonzalezCha.png
           data = {team} 
           key ={team.title}
           workers ={workers.filter(worker => worker.equipo === team.title)}
+          deleteWorker = {deleteWorker}
+          
           />
         )
       }

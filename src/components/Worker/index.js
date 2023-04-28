@@ -1,9 +1,11 @@
 import "./styles.css"
+import {AiFillCloseCircle } from "react-icons/ai"
 const Worker =(props) =>{
     const {personName, personPuesto, personFoto} = props.data
-    const {colorPrimary} =props
+    const {colorPrimary, deleteWorker } =props
     return <div className='worker'>
         <div className="worker__header" style={{ backgroundColor:colorPrimary}}>
+        <AiFillCloseCircle className="worker__eliminarbtn" onClick={deleteWorker}/>
             <img className="worker__img" src= {personFoto}alt={personName}/>
         </div>
         <div className="worker__info">
