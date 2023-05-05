@@ -4,7 +4,7 @@ import Worker from "../Worker"
 const Team =(props) =>{
     //destructuracion
     const {colorPrimary, colorSecundary, title } = props.data
-    const {workers, deleteWorker} = props  
+    const {workers, deleteWorker,updateColor} = props  
     const obj = {
         backgroundColor: colorSecundary
     }
@@ -19,6 +19,10 @@ const Team =(props) =>{
                 type="color"
                 className="team__input--color"
                 value={colorSecundary}
+                onChange={(evento) =>{
+                    updateColor(evento.target.value, title);
+
+                }}
             ></input>
         <h3 className="team__title" style={styleTitle} >{title}</h3>
         <div className="team__persons">

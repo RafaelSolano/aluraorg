@@ -179,6 +179,11 @@ function App() {
     //spread operator
     updateWorker([...workers, worker])
   }
+
+  //Actualizar el color del equipo
+  const updateColor =(color, title)=>{
+    console.log("Actualizar: ", color, title  );
+  }
   //eliminar colaborador
   const deleteWorker =() =>{
     console.log("eliminar Colaborador");
@@ -241,6 +246,7 @@ function App() {
           key ={team.title}
           workers ={workers.filter(worker => worker.equipo === team.title)}
           deleteWorker = {deleteWorker}
+          updateColor ={updateColor}
           
           />
         )
