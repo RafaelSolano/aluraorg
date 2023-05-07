@@ -4,7 +4,7 @@ import hexToRgba from 'hex-to-rgba';
 
 const Team =(props) =>{
     //destructuracion
-    const {colorPrimary, colorSecundary, title } = props.data
+    const {colorPrimary, colorSecundary, title, id } = props.data
     const {workers, deleteWorker, updateColor} = props  
     const obj = {
         backgroundColor: hexToRgba(colorPrimary, 0.3)
@@ -21,7 +21,7 @@ const Team =(props) =>{
                 className="team__input--color"
                 value={colorPrimary}
                 onChange={(evento) =>{
-                    updateColor(evento.target.value, title);
+                    updateColor(evento.target.value, id);
 
                 }}
             ></input>
