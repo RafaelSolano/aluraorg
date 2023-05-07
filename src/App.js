@@ -17,28 +17,36 @@ function App() {
     equipo:'Programación',
     personName:'Harland',
     personFoto:'https://github.com/harlandlohora.png',
-    personPuesto:'Instructor'
+    fav: true,
+    personPuesto:'Instructor',
+    
   },
   {
     id: uuid(),
     equipo:'Programación',
     personName:'Genesys Rondón',
     personFoto:'https://github.com/genesysaluralatam.png',
+    fav: true,
     personPuesto:'Desarrolladora de software e instructora'
+    
   },
   {
     id: uuid(),
     equipo:'Programación',
     personName:'Jeanmarie Quijada',
     personFoto:'https://github.com/JeanmarieAluraLatam.png',
+    fav: true,
     personPuesto:'Instructora en Alura Latam'
+    
   },
   {
     id: uuid(),
     equipo:'Programación',
     personName:'Christian Velasco',
     personFoto:'https://github.com/christianpva.png',
+    fav: true,
     personPuesto:'Head de Alura e instructor'
+    
   },
   
   
@@ -47,70 +55,90 @@ function App() {
     equipo:'Data Science',
     personName:'Genesys Rondón',
     personFoto:'https://github.com/genesysaluralatam.png',
+    fav: false,
     personPuesto:'Desarrolladora de software e instructora'
+    
   },
   {
     id: uuid(),
     equipo:'Devops',
     personName:'Jeanmarie Quijada',
     personFoto:'https://github.com/JeanmarieAluraLatam.png',
+    fav: false,
     personPuesto:'Instructora en Alura Latam'
+    
   },
   {
     id: uuid(),
     equipo:'Data Science',
     personName:'Christian Velasco',
     personFoto:'https://github.com/christianpva.png',
+    fav: false,
     personPuesto:'Head de Alura e instructor'
+    
   },
   {
     id: uuid(),
     equipo:'Devops',
     personName:'Harland',
     personFoto:'https://github.com/harlandlohora.png',
+    fav: false,
     personPuesto:'Frontend'
+    
   },
   {
     id: uuid(),
     equipo:'Devops ',
     personName:'Jose Gonzalez',
     personFoto:'https://github.com/JoseDarioGonzalezCha.png',
+    fav: false,
     personPuesto:'Dev. FullStack'
+    
   },
   {
     id: uuid(),
     equipo:'Data Science',
     personName:'Jeanmarie Quijada',
     personFoto:'https://github.com/JeanmarieAluraLatam.png',
+    fav: false,
     personPuesto:'Instructora en Alura Latam'
+    
   },
   {
     id: uuid(),
     equipo:'Devops',
     personName:'Christian Velasco',
     personFoto:'https://github.com/christianpva.png',
+    fav: false,
     personPuesto:'Head de Alura e instructor'
+    
   },
   {
     id: uuid(),
     equipo:'Devops',
     personName:'Genesys Rondón',
     personFoto:'https://github.com/genesysaluralatam.png',
+    fav: false,
     personPuesto:'Desarrolladora de software e instructora'
+    
   },
   {
     id: uuid(),
     equipo:'Data Science',
     personName:'Jose Gonzalez',
     personFoto:'https://github.com/JoseDarioGonzalezCha.png',
+    fav: false,
     personPuesto:'Dev. FullStack'
+    
   },
   {
     id: uuid(),
     equipo:'UX y Diseño',
     personName:'Harland',
     personFoto:'https://github.com/harlandlohora.png',
+    fav: false,
     personPuesto:'Frontend'
+    
   },
 
   {
@@ -118,7 +146,9 @@ function App() {
     equipo:'UX y Diseño',
     personName:'Christian Velasco',
     personFoto:'https://github.com/christianpva.png',
+    fav: false,
     personPuesto:'Head de Alura e instructor'
+    
   },
   
   
@@ -127,42 +157,54 @@ function App() {
     equipo:'UX y Diseño',
     personName:'Genesys Rondón',
     personFoto:'https://github.com/genesysaluralatam.png',
+    fav: false,
     personPuesto:'Desarrolladora de software e instructora'
+    
   },
   {
     id: uuid(),
     equipo:'UX y Diseño',
     personName:'Jeanmarie Quijada',
     personFoto:'https://github.com/JeanmarieAluraLatam.png',
+    fav: false,
     personPuesto:'Instructora en Alura Latam'
+    
   },
   {
     id: uuid(),
     equipo:'Móvil',
     personName:'Harland',
     personFoto:'https://github.com/harlandlohora.png',
+    fav: false,
     personPuesto:'Instructor'
+    
   },
   {
     id: uuid(),
     equipo:'Móvil',
     personName:'Genesys Rondón',
     personFoto:'https://github.com/genesysaluralatam.png',
+    fav: false,
     personPuesto:'Desarrolladora de software e instructora'
+    
   },
   {
     id: uuid(),
     equipo:'Móvil',
     personName:'Jeanmarie Quijada',
     personFoto:'https://github.com/JeanmarieAluraLatam.png',
+    fav: false,
     personPuesto:'Instructora en Alura Latam'
+    
   },
   {
     id: uuid(),
     equipo:'Móvil',
     personName:'Christian Velasco',
     personFoto:'https://github.com/christianpva.png',
+    fav: false,
     personPuesto:'Head de Alura e instructor'
+    
   },
   
   {
@@ -170,28 +212,36 @@ function App() {
     equipo:'Innovación y Gestión',
     personName:'Harland',
     personFoto:'https://github.com/harlandlohora.png',
+    fav: false,
     personPuesto:'Frontend'
+    
   },
   {
     id: uuid(),
     equipo:'Innovación y Gestión',
     personName:'Jose Gonzalez',
     personFoto:'https://github.com/JoseDarioGonzalezCha.png',
+    fav: false,
     personPuesto:'Dev. FullStack'
+    
   },
   {
     id: uuid(),
     equipo:'Innovación y Gestión',
     personName:'Christian Velasco',
     personFoto:'https://github.com/christianpva.png',
+    fav: false,
     personPuesto:'Head de Alura e instructor'
+    
   },
   {
     id: uuid(),
     equipo:'Innovación y Gestión',
     personName:'Genesys Rondón',
     personFoto:'https://github.com/genesysaluralatam.png',
+    fav: false,
     personPuesto:'Desarrolladora de software e instructora'
+    
   }
   ]);
    //lista de equipos
@@ -275,6 +325,20 @@ function App() {
       updateTeams([...teams, {...newTeam, id: uuid()}])
 
     }
+
+    //funcion like
+    const like = (id) => {
+      console.log("like", id);
+      const workersUpdate = workers.map((worker)=>{
+        if (worker.id === id){
+          worker.fav =  !worker.fav
+        }
+        return worker
+      })
+
+      updateWorker(workersUpdate)
+
+    }
     
   return (
     <div className="App">
@@ -295,7 +359,7 @@ function App() {
           workers ={workers.filter(worker => worker.equipo === team.title)}
           deleteWorker = {deleteWorker}
           updateColor ={updateColor}
-          
+          like ={like}
           />
         )
       }
