@@ -7,7 +7,7 @@ import MyOrg from './components/MyOrg';
 import Team from './components/Team';
 import Footer from './components/Footer';
 
-function App() {
+function App() { 
 
   const [showForm, updateShow] = useState(false)
   //lista de colaboradores
@@ -251,8 +251,10 @@ function App() {
     updateWorker([...workers, worker])
   }
   //eliminar colaborador
-  const deleteWorker =() =>{
-    console.log("eliminar Colaborador");
+  const deleteWorker =(id) =>{
+    console.log("eliminar Colaborador", id);
+    const newWorkers = workers.filter((worker) => worker.id !== id)
+    updateWorker(newWorkers)  
   }
   //Actualizar el color del equipo
   const updateColor =(color, id)=>{
