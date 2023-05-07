@@ -1,12 +1,13 @@
 import "./styles.css"
 import Worker from "../Worker"
+import hexToRgba from 'hex-to-rgba';
 
 const Team =(props) =>{
     //destructuracion
     const {colorPrimary, colorSecundary, title } = props.data
-    const {workers, deleteWorker,updateColor} = props  
+    const {workers, deleteWorker, updateColor} = props  
     const obj = {
-        backgroundColor: colorSecundary
+        backgroundColor: hexToRgba(colorPrimary, 0.3)
     }
 
     console.log();
@@ -18,7 +19,7 @@ const Team =(props) =>{
             <input
                 type="color"
                 className="team__input--color"
-                value={colorSecundary}
+                value={colorPrimary}
                 onChange={(evento) =>{
                     updateColor(evento.target.value, title);
 

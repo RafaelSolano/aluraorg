@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 function App() {
 
   const [showForm, updateShow] = useState(false)
+  //lista de colaboradores
   const [workers, updateWorker] = useState([
     {
     equipo:'Programación',
@@ -167,30 +168,8 @@ function App() {
     personPuesto:'Desarrolladora de software e instructora'
   }
   ]);
-  
-
-  const switchShow = () =>{
-    updateShow(!showForm)
-  }
-
-  //Registrar colaborador
-  const addWorker = (worker ) =>{
-    console.log("nuevo  Worker " , worker);
-    //spread operator
-    updateWorker([...workers, worker])
-  }
-
-  //Actualizar el color del equipo
-  const updateColor =(color, title)=>{
-    console.log("Actualizar: ", color, title  );
-  }
-  //eliminar colaborador
-  const deleteWorker =() =>{
-    console.log("eliminar Colaborador");
-  }
-
-  //lista de equipos
-  const teams = [ 
+   //lista de equipos
+  const [teams , updateTeams ] = useState([ 
     {
       title: "Programación",
       colorPrimary: '#57C278',
@@ -227,7 +206,35 @@ function App() {
       colorSecundary:'#FFEEDF'     
     }
     
-  ]
+  ])
+  
+  const switchShow = () =>{
+    updateShow(!showForm)
+  }
+  //Registrar colaborador
+  const addWorker = (worker ) =>{
+    console.log("nuevo  Worker " , worker);
+    //spread operator
+    updateWorker([...workers, worker])
+  }
+
+  //eliminar colaborador
+  const deleteWorker =() =>{
+    console.log("eliminar Colaborador");
+  }
+
+   //Actualizar el color del equipo
+  const updateColor =(color, title)=>{
+    console.log("Actualizar: ", color, title  );
+
+    const teamsUpdate = teams.map((team)=>{
+      if(team.title === title){
+        team.colorPrimary = color
+      }
+      return team
+    })
+    updateTeams(teamsUpdate)
+    }
     
   return (
     <div className="App">
