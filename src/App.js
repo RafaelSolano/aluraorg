@@ -267,6 +267,14 @@ function App() {
     })
     updateTeams(teamsUpdate)
     }
+
+    //Crear Equipo
+    const createTeam = (newTeam)=>{
+      console.log(newTeam);
+
+      updateTeams([...teams, {...newTeam, id: uuid()}])
+
+    }
     
   return (
     <div className="App">
@@ -275,6 +283,8 @@ function App() {
       {showForm  && <FormUser 
         teams ={teams.map((equipo) => equipo.title)}
         addWorker ={addWorker}
+        createTeam = { createTeam }
+
         />
       }
       <MyOrg switchShow ={switchShow}/>

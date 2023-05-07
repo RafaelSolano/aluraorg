@@ -9,7 +9,11 @@ const FormUser = (props) =>{
     const [personFoto , actualizarFoto] = useState("");
     const [equipo, actualizarEquipo] = useState("");
 
-    const {addWorker}=props;
+    const [title, actualizartitle] = useState("");
+    const [color, actualizarcolor] = useState("");
+
+    const {addWorker , createTeam}=props;
+    
 
     const controlSubmit =(e) =>{
         e.preventDefault()
@@ -22,6 +26,14 @@ const FormUser = (props) =>{
             
         }
         addWorker(datosEnviar);
+    }
+
+    //Manejar nuevo equipo
+    const adminNewTeam = (e)=>{
+
+        e.preventDefault()
+        createTeam({title, colorPrimary: color});
+
     }
 
     return <section className="formUser">
@@ -49,6 +61,21 @@ const FormUser = (props) =>{
                 Crear
             </Button>
             
+        </form>
+        <form onSubmit={adminNewTeam}  className="formUser__form">
+            <h2 className="formUser__title">Rellena el formulario para crear el equipo</h2>
+            <FieldForm 
+                title ='Titulo: ' 
+                placeholder="Ingresar Titulo" 
+                required valor= {title} 
+                actualizarValor = {actualizartitle}/>
+            <FieldForm title ='Color: ' 
+                placeholder="Ingresar color en Hexadecimal" 
+                required valor ={color} 
+                actualizarValor = {actualizarcolor} />
+                <Button>
+                Registrar equipo
+            </Button>
         </form>
     </section>
 }
