@@ -72,7 +72,9 @@ const FormUser = (props) =>{
             <FieldForm title ='Color: ' 
                 placeholder="Ingresar color en Hexadecimal" 
                 required valor ={color} 
-                actualizarValor = {actualizarcolor} />
+                actualizarValor = {actualizarcolor}
+                type = "color"
+                className ='formUser__title--color' />
                 <Button>
                 Registrar equipo
             </Button>

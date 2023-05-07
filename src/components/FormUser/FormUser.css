@@ -1,8 +1,9 @@
 .formUser{
     display: flex;
     justify-content: center;
-    margin: 8rem 0;
+    margin: 8rem 5rem;
     gap: 2.4rem;
+    flex-wrap: wrap;
 
     
 
@@ -12,7 +13,7 @@
     flex-direction: column;
     padding:0 10rem ;
     padding-bottom: 3.2rem;
-    max-width: 80%;
+    flex: 1;
     width: 100rem;
     height: auto;
     background-color: #F7F7F7;
@@ -26,4 +27,10 @@
     font-family: 'Prata', serif;
     font-weight: 400;
     font-size: 3.2rem;
+}
+.formUser__title--color{
+    width: 15rem;
+    height: 10rem  ;
+
+
 }
